@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body {
+  max-width: 960px;
+  background: url(board.png) repeat;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+#table {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+#table td {
+  position: relative;
+  text-align: center;
+}
+
+#table button {
+  width: 100%;
+  font-weight: bold;
+  background-color: #4caf50; /* ボタンの背景色 */
+  border: none; /* ボタンのボーダーを消す */
+  color: white; /* テキストの色を白にする */
+  padding: 15px 32px; /* ボタン内のスペースを設定する */
+  text-align: center; /* テキストを中央揃えにする */
+  text-decoration: none; /* テキストの下線を消す */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* マウスカーソルを手の形に変更 */
+  border-radius: 12px; /* ボタンの角を丸くする */
+  transition-duration: 0.4s; /* ホバーエフェクトの遷移時間を設定 */
+}
+
+#table button:hover {
+  background-color: red; /* マウスが上にあるときの背景色 */
+  color: black; /* マウスが上にあるときのテキスト色 */
+}
+
+.total {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  border: 2px solid;
+  font-size: 30px;
+  width: 1.5em;
+  text-align: center;
+}
+
+#myTotal {
+  background-color: #0961a3;
+  bottom: 10px;
+}
+
+#comTotal {
+  background-color: #d53633;
+  top: 10px;
+}
